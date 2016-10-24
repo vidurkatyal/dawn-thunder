@@ -5,7 +5,7 @@ baseURL <- 'http://codeforces.com/api/'
 keys <- read.csv('cfk.csv', header=FALSE)
 key <- keys[1, 1]
 secret <- keys[1, 2]
-
+#this method return rating of a user
 get_rating_info <- function(handle) {
 	rnd <- '123456'
 	methodName <- 'user.rating'
